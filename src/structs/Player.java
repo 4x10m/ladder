@@ -52,12 +52,15 @@ public class Player implements Serializable {
 	public Set<Score> getScores() {
 		return scores;
 	}
+	
+	private Player() { }
     
     public Player(String nickname) {
     	this.nickname = nickname;
     	this.privilege = PlayerPrivilege.PLAYER;
     	this.elo = 1000;
     }
+    
     public Player(String nickname, PlayerPrivilege privilege) {
     	this.nickname = nickname;
     	this.privilege = privilege;

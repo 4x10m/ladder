@@ -3,7 +3,7 @@ package structs.GameStructure;
 import structs.Player;
 import structs.Score;
 
-public class Solo extends GameStructure {
+public class Solo extends PartyStructure {
 	public Solo(Player player1, Score player1score, Player player2, Score player2score) {
 		int newplayer1elo = calcul(player1.getELO(), player2.getELO(), player1score.getValue());
 		int newplayer2elo = calcul(player2.getELO(), player1.getELO(), player2score.getValue());
